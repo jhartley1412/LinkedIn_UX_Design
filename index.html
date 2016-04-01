@@ -39,9 +39,9 @@
 
 		</div>
 
-		<div class="news_updates col_sm_1">
+		<div class="center_content_container col_sm_1">
 			
-			<div class="news_updates_tab_nav">
+			<div class="center_content_nav">
 				<a href="#">
 				<div class="news_tab profile_tab">
 					<h2> News Updates </h2>
@@ -53,19 +53,171 @@
 					<h2> My Viewership </h2>
 				</div>
 				</a>
-
-				<div class="news_updates_page tab_info">
-					<p> nfjkds;nfksnsjkfnkdnfsknfks </p>
-				</div>
-
-				<div class="viewership_page tab_info">
-					<p> VIEWERSHIP RAW </p>
-				</div>
 			</div>
 
+			<div class="news_updates_page tab_info">
+				
+
+				<!-- CHECKLIST OF POSSIBLE NEWS GENRES FOR USER TO CHOOSE FROM -->
+				<div class="news_checklist">
+					<div class="news_genre">
+						<input type="checkbox"/> Design
+					</div>
+
+					<div class="news_genre">
+						<input type="checkbox"/> Business
+					</div>
+
+					<div class="news_genre">
+						<input type="checkbox"/> Fashion
+					</div>
+
+					<a href="#"> <i class="fa fa-caret-down fa-2x"></i> </a>
+
+				<!-- begining dropdown menu 	<dd>
+						<ul>
+							<li> 
+								<input type="checkbox"/> Politics
+							</li>
+
+							<li> 
+								<input type="checkbox"/> Hollywood
+							</li>
+
+							<li> 
+								<input type="checkbox"/> Finance
+							</li>
+
+							<li> 
+								<input type="checkbox"/> Marketing
+							</li>
+
+						</ul>
+					</dd> -->
+
+				</div>
+
+
+
+				<!-- BEGINING OF FIRST NEWS ARTICLE -->
+				<div class="news_articles">
+					
+					<a href="#"> <div class="article_container">
+						<div class="article_img_container">
+							<img class="article_img" src="./images/paul-david-hewson-434928_1920.jpg">
+						</div>
+
+						<h3> 101 Great Talks on Business and Future Development </h3>
+
+						<p> Before they sold old, beard craft beer...</p>
+
+						<a href="#"> Read More</a>
+					</div> </a>
+
+					<a href="#"> <div class="article_container">
+						<div class="article_img_container">
+							<img class="article_img" src="./images/picjumbo.com_HNCK5322.jpg">
+						</div>
+
+						<h3> Stormy Weather Headed for Happy Grills Management </h3>
+
+						<p> Fly above the clouds in high class style...</p>
+
+						<a href="#"> Read More</a>
+					</div> </a>
+
+					
+					<!-- BUTTON TO SHOW MORE ARTICLES -->
+					<div class="more_articles"> 
+						<a href="#"> 
+						<span class="span_more_articles large_link"> More Articles </span> <i class="fa fa-caret-down fa-2x"></i> 
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="viewership_page tab_info">
+				<div class="big_number_img_container">
+					<img class="big_number_img" src="./images/bubbles_icon.png">
+				</div>
+				
+				<div class="viewership_text">
+					
+					<p> 26 people have viewed your profile page in the last <span class="time_span"> 1 week </span> </p>
+
+					<!-- <div class="time_span_dropdown">
+						<p> I'm gonna be text some day :D </p>
+					</div> -->
+
+				</div>
+
+				<div class="graph"> </div>
+
+				<div class="viewer_stats_container">
+					<a href="#"> See more viewer statistics </a>
+					<a href="#"> Get more viewership </a>
+				</div>
+
+			</div>
+			<!-- END OF viewership_page tab_info -->
+
 		</div>
+		<!-- END OF center_content_container -->
+
+
+		<div class="side_portal col_sm_1">
+			
+			<!-- SIDE PORTAL NAVIGATION W/ ICONS -->
+			<div class="side_portal_nav">
+				<a href="#" class="portal_tab_icons"> 
+					<img class="briefcase portal_icons" src="./images/briefcase_icon.png">
+				</a>
+
+				<a href="#" class="portal_tab_icons"> 
+					<img class="briefcase portal_icons" src="./images/user_icon.png">
+				</a>
+
+				<a href="#" class="portal_tab_icons"> 
+					<img class="briefcase portal_icons" src="./images/education_icon.png">
+				</a>
+
+				<a href="#" class="portal_tab_icons"> 
+					<img class="briefcase portal_icons" src="./images/heart_icon.png">
+				</a>
+			</div>
+			<!-- END OF side_portal_nav -->
+
+
+			<!-- SIDE PORTAL INDIVISUAL PAGES -->
+			<div class="briefcase_page side_portal_page">
+				<h4> Current Job Postings </h4>
+
+				<div class="job_posting">
+
+					<div class="job_posting_logo">
+
+					</div>
+
+					<h2> Intern </h2>
+					<h3> Forrest Hostpital </h3>
+					
+					<a href="#"> <span class="job_learn_more large_link"> Learn More </span> </a>
+
+					<a href="#"> <span class="job_apply large_link"> Apply </span> </a>
+
+				</div>
+
+			</div>
+			
+
+		</div>
+		<!-- END OF side_portal -->
+		
 
       </div>
+      <!-- END OF wrapper -->
     
     <!--This include tag adds /_includes/footer.html to every page that has layout: default in the front matter -->
     {% include footer.html %}
@@ -76,6 +228,7 @@
 
     $(document).ready(function(){
 
+    	// NEWS AND MY VIEWERSHIP TABS
     	$('.news_tab').click(function(){
     		$('.viewership_page').hide();
     		$('.news_updates_page').show();
@@ -84,6 +237,12 @@
     	$('.viewership_tab').click(function(){
     		$('.news_updates_page').hide();
     		$('.viewership_page').show();
+    	});
+
+
+    	$('.time_span').click(function(){
+    		$('.time_span_dropdown').width($('.time_span').width());
+    		$('.time_span_dropdown').show();
     	});
 
     });

@@ -1,12 +1,14 @@
 
 
 $text_color: #4f6a92; 
+$header_color: #00396b;
 $links_color: #008eff;
 $links_hover: #005fb2;
+$accent_color: #a7b8d1; //for both borders and carots 
 
 body {
 	font-family: "proxima-nova-soft", "Tahoma", sans-serif;
-
+	line-height: 1.5;
 }
 
 h1 {
@@ -24,10 +26,27 @@ h2 {
 }
 
 h3 {
-	font-size: 1.25em;
+	font-size: 1.1em;
+	margin: 1em auto 0 auto;
+	color: $header_color;
+	font-weight: 100;
 }
 
-a{
+h4{
+	font-size: 1.1em;
+	text-transform: uppercase;
+	text-decoration: underline;
+	margin: 1em auto;
+	padding-left: 1em;
+	color: $header_color;
+}
+
+p{
+	margin: 0 auto;
+	color: $text_color;
+}
+
+a {
 	color: $links_color;
 	text-decoration: none;
 
@@ -35,3 +54,16 @@ a{
 		color: $links_hover;
 	}
 }
+
+.large_link{
+	font-size: 1.3em;
+	color: $links_color;
+
+	&:hover{
+		color: $links_hover;
+	}
+}
+
+
+
+
