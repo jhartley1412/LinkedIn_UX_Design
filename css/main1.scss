@@ -1,12 +1,80 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@import 'type1',
-		'colors1',
+@import 'variables_type1',
 		'_col_breakpoints',
 		'_element_breakpoints';
 
 
-.header-font {
-	color: $primary-color;
+.body{
+	overflow: hidden;
 }
+
+.wrapper{
+	width: 100%;
+}
+
+.profile_info{
+	box-sizing: border-box;
+	padding: 1em;
+	overflow: hidden;
+	background-color: lightblue;
+}
+
+.profile_avatar{
+	float: left;
+}
+
+.profile_name, .profile_job, .message_notifications_container{
+	float: left;
+	padding-left: 2rem;
+}
+
+.profile_job{
+	margin-bottom: 0.5em;
+}
+
+.blue_icon{
+	padding-top: 0.5em;
+	padding-right: 0.5em;
+	width: 40px;
+	height: 40px;
+}
+
+.see_connections{
+	padding-right: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.news_updates{
+	padding: 1em;
+	box-sizing: border-box;
+}
+
+.profile_tab{
+	box-sizing: border-box;
+	float: left;
+	width: 50%;
+}
+
+.news_updates_page{
+	display: block;
+}
+
+.viewership_page{
+	display: none;
+}
+
+.tab_info{
+	padding: 1em;
+}
+
+
+
+
+
+
+
+
+
+

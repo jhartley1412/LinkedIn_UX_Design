@@ -11,8 +11,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Janina Hartley | LinkedIn Dashboard</title>
 	<link rel="stylesheet" href="/css/main1.css">
+	
+	<script src="https://use.typekit.net/riz0ulk.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-	<link rel="stylesheet" href="./jquery-2.2.2.min.map">
+	<link rel="text/javascript" href="/jquery/jquery-2.2.2.min.map">
 
 </head>
 
@@ -25,7 +28,56 @@
 </header>
 
 
-      <h1> BINGO BONGO </h1>
+      <div class="wrapper">
+		
+		<div class="profile_info col_md_1">
+			
+			<div class="profile_avatar"> 
+				<img class="profile_img" src="./images/profile_icon.png">
+				<a href="edit_profile"> Edit Profile </a>
+			</div>
+			
+			<h1 class="profile_name"> Mary Gray </h1>
+			<h2 class="profile_job"> Waitress at Happy Grill </h2>
+			
+
+			<div class="message_notifications_container">
+				<a href="#"> <img class="message_icon blue_icon" src="./images/message_icon.png"> </a>
+
+				<a href="#"> <img class="notifications_icon blue_icon" src="./images/notifications_icon.png"> </a>
+
+				<a href="#" class="see_connections"> See Connections </a>
+			</div>
+
+		</div>
+
+		<div class="news_updates col_sm_1">
+			
+			<div class="news_updates_tab_nav">
+				<a href="#">
+				<div class="news_tab profile_tab">
+					<h2> News Updates </h2>
+				</div>
+				</a>
+				
+				<a href="#">
+				<div class="viewership_tab profile_tab">
+					<h2> My Viewership </h2>
+				</div>
+				</a>
+
+				<div class="news_updates_page tab_info">
+					<p> nfjkds;nfksnsjkfnkdnfsknfks </p>
+				</div>
+
+				<div class="viewership_page tab_info">
+					<p> VIEWERSHIP RAW </p>
+				</div>
+			</div>
+
+		</div>
+
+      </div>
     
     <!--This include tag adds /_includes/footer.html to every page that has layout: default in the front matter -->
     <footer>
@@ -34,10 +86,22 @@
 
 </footer>
 
+	
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 
     <script>
 
     $(document).ready(function(){
+
+    	$('.news_tab').click(function(){
+    		$('.viewership_page').hide();
+    		$('.news_updates_page').show();
+    	});
+
+    	$('.viewership_tab').click(function(){
+    		$('.news_updates_page').hide();
+    		$('.viewership_page').show();
+    	});
 
     });
 
