@@ -1,0 +1,78 @@
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.5em; }
+
+h3 {
+  font-size: 1.25em; }
+
+@media (min-width: 0) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-13, .col-sm-14, .col-sm-15 {
+    width: 100%;
+    margin-right: 2%; } }
+@media (min-width: 500px) {
+  .col-md-1 {
+    width: 6.648%;
+    margin-right: 2%; }
+
+  .col-md-2 {
+    width: 15.296%;
+    margin-right: 2%; }
+
+  .col-md-3 {
+    width: 21.944%;
+    margin-right: 2%; }
+
+  .col-md-4 {
+    width: 28.592%;
+    margin-right: 2%; }
+
+  .col-md-5 {
+    width: 35.24%;
+    margin-right: 2%; }
+
+  .col-md-6 {
+    width: 41.888%;
+    margin-right: 2%; }
+
+  .col-md-7 {
+    width: 48.536%;
+    margin-right: 2%; }
+
+  .col-md-8 {
+    width: 55.184%;
+    margin-right: 2%; }
+
+  .col-md-9 {
+    width: 61.832%;
+    margin-right: 2%; }
+
+  .col-md-10 {
+    width: 68.48%;
+    margin-right: 2%; }
+
+  .col-md-11 {
+    width: 75.128%;
+    margin-right: 2%; }
+
+  .col-md-12 {
+    width: 81.776%;
+    margin-right: 2%; }
+
+  .col-md-13 {
+    width: 88.424%;
+    margin-right: 2%; }
+
+  .col-md-14 {
+    width: 95.072%;
+    margin-right: 2%; }
+
+  .col-md-15 {
+    width: 100%;
+    margin-right: 2%; } }
+.header-font {
+  color: red; }
