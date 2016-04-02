@@ -1,0 +1,43 @@
+
+@import 'variables_type1';
+
+
+.viewership_page{
+	display: none;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+
+.big_number_img{
+	width: 100%;
+}
+
+.viewership_text{
+	box-sizing: border-box;
+	position: relative;
+}
+
+.time_span_dropdown{
+	position: absolute;
+	display: none;
+}
+
+.graph{
+	width: 80%;
+	margin: 1em auto;
+	height: 150px;
+	clear: both;
+	margin-top: 150px;
+	background-color: $header_color;
+}
+
+.viewer_stats_container{
+	width: 80%;
+	margin: 0 auto;
+
+	a{
+		float: left;
+		padding-right: 1em;
+	}
+}

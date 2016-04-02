@@ -26,6 +26,19 @@
     
     <!--This include tag adds /_includes/header.html to every page that has layout: default in the front matter -->
     <header class="site-header">
+	
+	<div class="header_logo">
+	</div>
+
+	<div class="header_links">
+		<a href="#"> Home </a>
+
+		<a href="#"> Profile </a>
+
+		<a href="#"> Business Services </a>
+
+		<a href="#"> Try Premium </a>
+	</div>
 
 </header>
 
@@ -57,13 +70,13 @@
 			
 			<div class="center_content_nav">
 				<a href="#">
-				<div class="news_tab profile_tab">
+				<div class="news_tab center_content_tab">
 					<h2> News Updates </h2>
 				</div>
 				</a>
 				
 				<a href="#">
-				<div class="viewership_tab profile_tab">
+				<div class="viewership_tab center_content_tab">
 					<h2> My Viewership </h2>
 				</div>
 				</a>
@@ -182,7 +195,7 @@
 
 
 
-		<!-- side user portal w/ business/user/education/hearts tabs -->
+		<!-- RIGHT SIDE PORTAL WITH BUSINESS/USER/ETC TABS -->
 		<div class="side_portal col_sm_1">
 			
 			<!-- SIDE PORTAL NAVIGATION W/ ICONS -->
@@ -225,6 +238,7 @@
 
 				</div>
 
+
 				<div class="job_posting">
 
 					<div class="job_posting_logo">
@@ -238,6 +252,50 @@
 
 					<a href="#"> <span class="job_apply large_link"> Apply </span> </a>
 
+				</div>
+
+
+				<div class="job_posting">
+
+					<div class="job_posting_logo">
+
+					</div>
+
+					<h2> Cashier </h2>
+					<h3> Gigantic Foodmart </h3>
+					
+					<a href="#"> <span class="job_learn_more large_link"> Learn More </span> </a>
+
+					<a href="#"> <span class="job_apply large_link"> Apply </span> </a>
+
+				</div>
+
+
+				<div class="job_posting">
+
+					<div class="job_posting_logo">
+
+					</div>
+
+					<h2> Junior Web Developer </h2>
+					<h3> Trusty-Elec-Company </h3>
+					
+					<a href="#"> <span class="job_learn_more large_link"> Learn More </span> </a>
+
+					<a href="#"> <span class="job_apply large_link"> Apply </span> </a>
+
+				</div>
+
+
+				<div class="side_portal_search_bar">
+					<div class="search_bar_outer">
+						<div class="search_bar_inner">
+							<input type="search" placeholder=" Search for Jobs or Companies">
+								
+								<a href="#"> <i class="fa fa-search"></i> </a>
+							</input>
+						</div>
+					</div>
 				</div>
 
 			</div>
@@ -320,6 +378,18 @@
 
 				</div>
 
+
+				<div class="side_portal_search_bar">
+					<div class="search_bar_outer">
+						<div class="search_bar_inner">
+							<input type="search" placeholder=" Search for Connections">
+								
+								<a href="#"> <i class="fa fa-search"></i> </a>
+							</input>
+						</div>
+					</div>
+				</div>
+
 			</div>
 			<!-- END OF user_page -->
 			
@@ -354,6 +424,17 @@
 					
 					<a href="#"> <span class="job_learn_more large_link"> Learn More </span> </a>
 
+				</div>
+
+				<div class="side_portal_search_bar">
+					<div class="search_bar_outer">
+						<div class="search_bar_inner">
+							<input type="search" placeholder=" Search for Schools, Classes or Courses">
+								
+								<a href="#"> <i class="fa fa-search"></i> </a>
+							</input>
+						</div>
+					</div>
 				</div>
 
 			</div>
@@ -397,6 +478,7 @@
     <script>
 
     $(document).ready(function(){
+
 
     	// NEWS AND MY VIEWERSHIP TABS
     	$('.news_tab').click(function(e){

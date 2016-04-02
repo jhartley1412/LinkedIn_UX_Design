@@ -3,6 +3,14 @@
 ---
 @import 'normalize',
 		'variables_type1',
+		'header_elements',
+		'profile_elements',
+		'news_elements',
+		'viewership_elements',
+		'jobs_menu',
+		'user_connections_menu',
+		'education_menu',
+		'footer_elements',
 		'_col_breakpoints',
 		'_element_breakpoints';
 
@@ -15,39 +23,11 @@
 	width: 100%;
 }
 
-.profile_info{
-	box-sizing: border-box;
-	padding: 1em;
-	overflow: hidden;
-}
-
-.profile_avatar{
-	float: left;
-}
-
-.profile_name, .profile_job, .message_notifications_container{
-	float: left;
-	padding-left: 2rem;
-}
-
-.profile_job{
-	margin-bottom: 0.5em;
-}
-
-.blue_icon{
-	padding-top: 0.5em;
-	padding-right: 0.5em;
-	width: 40px;
-	height: 40px;
-}
-
-.see_connections{
-	padding-right: 0.5em;
-	padding-bottom: 0.5em;
-}
 
 
-// news updates and profile viewership
+
+// CENTER CONTAINERS 
+// (NEWS FEED AND VIEWERSHIP)
 .center_content_container{
 	width: 100%;
 	box-sizing: border-box;
@@ -60,110 +40,48 @@
 	margin-bottom: 1em;
 }
 
-.profile_tab{
+.center_content_tab{
 	box-sizing: border-box;
 	float: left;
 	width: 50%;
 }
 
-.news_updates_page{
-	display: block;
-	padding: 2em;
-}
-
-
-.news_checklist{
-	.fa-caret-down{
-		margin-top: -5px;
-		color: $accent_color;
-
-		&:hover{
-			color: $text-color;
-		}
-	}
-}
-
-
-
-.viewership_page{
-	display: none;
-	box-sizing: border-box;
-	overflow: hidden;
-}
-
-.tab_info{
-	padding: 1em;
-}
-
-.news_genre{
-	float: left;
-	padding-right: 1em;
-	color: $text-color;
-}
-
-
-.more_articles{
-	width: 50%;
-	margin: 2em auto 0 auto;
-	color: $accent_color;
-	overflow: hidden;
-	
-	.span_more_articles{
-		float: left;
-	}
-
-	.fa-caret-down{
-		margin-top: -5px;
-		padding-left: 5px;
-		float: left;
-	}
-
-	&:hover{
-		color: $text-color;
-	}
-}
-
-
-
-.big_number_img{
+.search_bar_outer{
 	width: 100%;
-}
-
-.viewership_text{
-	box-sizing: border-box;
-	position: relative;
-}
-
-.time_span_dropdown{
 	position: absolute;
-	display: none;
-}
+	left: 0;
+	bottom: 0;
+	box-sizing: border-box;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	overflow: hidden;
+	background-color: $light_accent;
+	border: 1px solid $accent_color;
 
-.graph{
-	width: 80%;
-	margin: 1em auto;
-	height: 150px;
-	clear: both;
-	margin-top: 150px;
-	background-color: $header_color;
-}
-
-.viewer_stats_container{
-	width: 80%;
-	margin: 0 auto;
-
-	a{
+	input{
+		width: 250px;
+		border-radius: 10px;
 		float: left;
-		padding-right: 1em;
+	}
+
+	.fa-search{
+		margin-top: 7px;
+		margin-left: 5px;
+		float: left;
 	}
 }
 
-
+.search_bar_inner{
+	width: 275px;
+	margin: 0 auto;
+	overflow: hidden;
+}
 
 .side_portal{
 	width: 100%;
 	border: 1px solid $accent_color;
 	overflow: hidden;
+	position: relative;
 }
 
 .side_portal_nav{
@@ -193,123 +111,10 @@
 	padding: 2em;
 }
 
-.job_posting{
-	width: 80%;
-	margin: 2em auto;
-	
-	h2{
-		color: $header_color;
-	}
-
-	h3{
-		margin-top: 0;
-		color: $text-color;
-	}
-}
-
-.job_posting_logo, .person_know_avatar{
-	width: 80px;
-	height: 80px;
-	background-color: $header_color;
-}
-
-.job_posting_logo{
-	float: right;
-}
-
-.person_know_avatar{
-	float: left;
-}
-
-.job_learn_more, .job_apply, .connect_link, .IDK_link{
-	margin: 0 auto;
-	display: block;
-}
-
 
 .user_page, .education_page, .heart_page{
 	display: none;
 }
-
-.person_know_name_container{
-	width: 70%;
-	overflow: hidden;
-	float: left;
-	margin-left: 1em;
-}
-
-.person_know{
-	overflow: hidden;
-	margin: 2em auto;
-
-	h3{
-		margin-top: 0;
-	}
-}
-
-.person_know_avatar{
-	margin-bottom: 5em;
-}
-
-
-
-
-// EDUCATION PAGE
-
-
-
-
-.education_college_container, .education_class_container{
-	box-sizing: border-box;
-	margin: 2em auto;
-	overflow: hidden;
-	
-	p{
-		width: 70%;
-		float: left;
-	}
-
-	.large_link{
-		float: left;
-		clear: both;
-	}
-}
-
-.college_img, .class_img{
-	width: 30%;
-	height: 60px;
-	float: left;
-	background-color: $header_color;
-}
-
-
-footer{
-	width: 100%;
-	padding: 2em;
-	box-sizing: border-box;
-	background-color: $header_color;
-}
-
-.footer_links_container{
-	width: 100%;
-	max-width: 400px;
-	margin: 0 auto;
-}
-
-a.footer_link{
-	display: inline-block;
-	color: white;
-	padding-right: 2em;
-}
-
-
-
-
-
-
-
-
-
 
 
 

@@ -1,0 +1,32 @@
+
+@import 'variables_type1';
+
+
+header{
+	width: 100%;
+	background-color: $header_color;
+	box-sizing: border-box;
+	padding: 2em;
+	overflow: hidden;
+}
+
+.header_logo{
+	width: 80px;
+	height: 80px;
+	float: left;
+	background-color: $accent_color;
+}
+
+.header_links{
+	width: 70%;
+	max-width: 400px;
+	margin-left: 1em;
+	float: left;
+
+	a{
+		color: $light_accent;
+		margin-right: 1em;
+		display: inline-block;
+		font-size: 1.2em;
+	}
+}

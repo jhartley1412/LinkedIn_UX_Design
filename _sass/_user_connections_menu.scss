@@ -1,0 +1,38 @@
+
+@import 'variables_type1';
+
+
+.person_know_avatar{
+	width: 80px;
+	height: 80px;
+	background-color: $header_color;
+}
+
+.person_know_avatar{
+	float: left;
+}
+
+.connect_link, .IDK_link{
+	margin: 0 auto;
+	display: block;
+}
+
+.person_know_name_container{
+	width: 70%;
+	overflow: hidden;
+	float: left;
+	margin-left: 1em;
+}
+
+.person_know{
+	overflow: hidden;
+	margin: 2em auto;
+
+	h3{
+		margin-top: 0;
+	}
+}
+
+.person_know_avatar{
+	margin-bottom: 5em;
+}

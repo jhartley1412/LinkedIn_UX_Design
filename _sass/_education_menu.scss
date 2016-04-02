@@ -1,0 +1,27 @@
+// Education Menu Elements
+
+@import 'variables_type1';
+
+
+.education_college_container, .education_class_container{
+	box-sizing: border-box;
+	margin: 2em auto;
+	overflow: hidden;
+	
+	p{
+		width: 70%;
+		float: left;
+	}
+
+	.large_link{
+		float: left;
+		clear: both;
+	}
+}
+
+.college_img, .class_img{
+	width: 30%;
+	height: 60px;
+	float: left;
+	background-color: $header_color;
+}

@@ -1,0 +1,23 @@
+// footer elements
+
+@import 'variables_type1';
+
+
+footer{
+	width: 100%;
+	padding: 2em;
+	box-sizing: border-box;
+	background-color: $header_color;
+}
+
+.footer_links_container{
+	width: 100%;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+a.footer_link{
+	display: inline-block;
+	color: white;
+	padding-right: 1em;
+}
