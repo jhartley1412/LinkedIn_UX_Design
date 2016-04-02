@@ -181,6 +181,8 @@
 		<!-- END OF center_content_container -->
 
 
+
+		<!-- side user portal w/ business/user/education/hearts tabs -->
 		<div class="side_portal col_sm_1">
 			
 			<!-- SIDE PORTAL NAVIGATION W/ ICONS -->
@@ -242,45 +244,134 @@
 			<!-- END OF briefcase_page -->
 
 
+
+			<!-- User/People you may know page -->
 			<div class="user_page side_portal_page">
-				<h4> Current Job Postings </h4>
+				<h4> People You May Know </h4>
 
-				<div class="job_posting">
+				<div class="person_know">
 
-					<div class="job_posting_logo">
+					<div class="person_know_avatar">
 
 					</div>
-
-					<h2> USER PAGE </h2>
-					<h3> Forrest Hostpital </h3>
 					
-					<a href="#"> <span class="job_learn_more large_link"> Learn More </span> </a>
+					<div class="person_know_name_container">
+						<a href="#"> <h2> Larry Lost </h2> </a>
+						<a href="#"> <h3> works at Gillian Law </h3> </a>
 
-					<a href="#"> <span class="job_apply large_link"> Apply </span> </a>
+						<a href="#"> <span class="connect_link large_link"> Connect </span> </a>
+
+						<a href="#"> <span class="IDK_link large_link"> I don't know this person </span> </a>
+					</div>
 
 				</div>
 
-				<div class="job_posting">
 
-					<div class="job_posting_logo">
+				<div class="person_know">
+
+					<div class="person_know_avatar">
 
 					</div>
 
-					<h2> Junior Designer </h2>
-					<h3> Albert Frost Artistics </h3>
-					
-					<a href="#"> <span class="job_learn_more large_link"> Learn More </span> </a>
+					<div class="person_know_name_container">
+						<a href="#"> <h2> David Shephard </h2> </a>
+						<a href="#"> <h3> works at Williams Bakery </h3> </a>
 
-					<a href="#"> <span class="job_apply large_link"> Apply </span> </a>
+						<a href="#"> <span class="connect_link large_link"> Connect </span> </a>
+
+						<a href="#"> <span class="IDK_link large_link"> I don't know this person </span> </a>
+					</div>
+
+				</div>
+
+
+				<div class="person_know">
+
+					<div class="person_know_avatar">
+
+					</div>
+					
+					<div class="person_know_name_container">
+						<a href="#"> <h2> Walt Lloyd </h2> </a>
+						<a href="#"> <h3> works at Brains and Science Museum for Kids </h3> </a>
+
+						<a href="#"> <span class="connect_link large_link"> Connect </span> </a>
+
+						<a href="#"> <span class="IDK_link large_link"> I don't know this person </span> </a>
+					</div>
+
+				</div>
+
+
+				<div class="person_know">
+
+					<div class="person_know_avatar">
+
+					</div>
+					
+					<div class="person_know_name_container">
+						<a href="#"> <h2> Ju Yong </h2> </a>
+						<a href="#"> <h3> works at Yong Industries </h3> </a>
+					
+						<a href="#"> <span class="connect_link large_link"> Connect </span> </a>
+
+						<a href="#"> <span class="IDK_link large_link"> I don't know this person </span> </a>
+					</div>
 
 				</div>
 
 			</div>
+			<!-- END OF user_page -->
 			
+
+			
+			<!-- education page -->
+			<div class="education_page side_portal_page">
+				
+				<h4> Further Your Education </h4>
+				<p> Planning to attend a university? How about going back to school to get that perfect degree? Are you looking to further your education? We’ve got you covered. Thanks to LinkedIn resources, we can help you find the perfect degree or get into the perfect school so you can advance your skills, knowledge an network! </p>
+
+
+				<div class="education_college_container">
+					
+					<h3> Featured College </h3>
+
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet velit quis tortor vulputate fringilla aliquam sit amet ante. </p>
+
+					<div class="college_img"> </div>
+					
+					<a href="#"> <span class="job_learn_more large_link"> Learn More </span> </a>
+
+				</div>
+
+				<div class="education_class_container">
+					
+					<h3> Featured Class or Course </h3>
+
+					<p> Nunc ac augue sed dui luctus fringilla euismod sit amet tellus. Aenean sed pretium elit, et tempor ante. Etiam dictum posuere ex sit amet dapibus. </p>
+
+					<div class="class_img"> </div>
+					
+					<a href="#"> <span class="job_learn_more large_link"> Learn More </span> </a>
+
+				</div>
+
+			</div>
+			<!-- END OF education_page -->
+
+
+
+			<!-- hearts and favorites tab page -->
+			<div class="heart_page side_portal_page">
+				
+				<h4> Save Your Favorites </h4>
+				<p> This is your Favorites menu. Here is where you can save articles, companies, and people you find interesting or want to come back to later. As you save things to your Favorites, you can scroll down a list of things you’ve saved, organize them by type (article, connection, company, etc), and even send the page links via your LinkedIn email. </p>
+
+			</div>
+			<!-- END OF hearts_page -->
 
 		</div>
 		<!-- END OF side_portal -->
-		
 
       </div>
       <!-- END OF wrapper -->
@@ -328,6 +419,24 @@
     		$('.education_page').hide();
     		$('.heart_page').hide();
     		$('.user_page').show();
+
+    		e.preventDefault();
+    	});
+
+    	$('.education_tab').click(function(e){
+    		$('.briefcase_page').hide();
+    		$('.user_page').hide();
+    		$('.heart_page').hide();
+    		$('.education_page').show();
+
+    		e.preventDefault();
+    	});
+
+    	$('.heart_tab').click(function(e){
+    		$('.briefcase_page').hide();
+    		$('.user_page').hide();
+    		$('.education_page').hide();
+    		$('.heart_page').show();
 
     		e.preventDefault();
     	});

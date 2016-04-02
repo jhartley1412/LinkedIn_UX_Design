@@ -509,7 +509,11 @@ a {
   .time_span {
     padding: 0.3em;
     padding-right: 1em;
-    border: 1px solid #a7b8d1; } }
+    border: 1px solid #a7b8d1; }
+
+  .side_portal_page {
+    max-height: 400px;
+    overflow: scroll; } }
 .body {
   overflow: hidden; }
 
@@ -654,15 +658,61 @@ a {
     margin-top: 0;
     color: #4f6a92; }
 
-.job_posting_logo {
+.job_posting_logo, .person_know_avatar {
   width: 80px;
   height: 80px;
-  float: right;
   background-color: #00396b; }
 
-.job_learn_more, .job_apply {
+.job_posting_logo {
+  float: right; }
+
+.person_know_avatar {
+  float: left; }
+
+.job_learn_more, .job_apply, .connect_link, .IDK_link {
   margin: 0 auto;
   display: block; }
 
-.user_page {
+.user_page, .education_page, .heart_page {
   display: none; }
+
+.person_know_name_container {
+  width: 70%;
+  overflow: hidden;
+  float: left;
+  margin-left: 1em; }
+
+.person_know {
+  overflow: hidden;
+  margin: 2em auto; }
+  .person_know h3 {
+    margin-top: 0; }
+
+.person_know_avatar {
+  margin-bottom: 5em; }
+
+.education_college_container, .education_class_container {
+  box-sizing: border-box;
+  margin: 2em auto;
+  overflow: hidden; }
+  .education_college_container p, .education_class_container p {
+    width: 70%;
+    float: left; }
+  .education_college_container .large_link, .education_class_container .large_link {
+    float: left;
+    clear: both; }
+
+.college_img, .class_img {
+  width: 30%;
+  height: 60px;
+  float: left;
+  background-color: #00396b; }
+
+.footer_link {
+  width: 100%;
+  padding: 2em;
+  margin: 2em auto 0 auto;
+  box-sizing: border-box;
+  background-color: #00396b; }
+  .footer_link a {
+    color: white; }

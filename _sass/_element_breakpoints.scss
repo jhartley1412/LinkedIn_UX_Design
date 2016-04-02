@@ -55,6 +55,11 @@
 		border: 1px solid $accent_color;
 	}
 
+	.side_portal_page{
+		max-height: 400px;
+		overflow: scroll;
+	}
+
 
 }
 
