@@ -647,7 +647,7 @@ a {
 
 .job_posting {
   width: 80%;
-  margin: 0 auto; }
+  margin: 2em auto; }
   .job_posting h2 {
     color: #00396b; }
   .job_posting h3 {
@@ -663,3 +663,6 @@ a {
 .job_learn_more, .job_apply {
   margin: 0 auto;
   display: block; }
+
+.user_page {
+  display: none; }

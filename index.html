@@ -172,19 +172,19 @@
 			<!-- SIDE PORTAL NAVIGATION W/ ICONS -->
 			<div class="side_portal_nav">
 				<a href="#" class="portal_tab_icons"> 
-					<img class="briefcase portal_icons" src="./images/briefcase_icon.png">
+					<img class="briefcase_tab portal_icons" src="./images/briefcase_icon.png">
 				</a>
 
 				<a href="#" class="portal_tab_icons"> 
-					<img class="briefcase portal_icons" src="./images/user_icon.png">
+					<img class="user_tab portal_icons" src="./images/user_icon.png">
 				</a>
 
 				<a href="#" class="portal_tab_icons"> 
-					<img class="briefcase portal_icons" src="./images/education_icon.png">
+					<img class="education_tab portal_icons" src="./images/education_icon.png">
 				</a>
 
 				<a href="#" class="portal_tab_icons"> 
-					<img class="briefcase portal_icons" src="./images/heart_icon.png">
+					<img class="heart_tab portal_icons" src="./images/heart_icon.png">
 				</a>
 			</div>
 			<!-- END OF side_portal_nav -->
@@ -202,6 +202,58 @@
 
 					<h2> Intern </h2>
 					<h3> Forrest Hostpital </h3>
+					
+					<a href="#"> <span class="job_learn_more large_link"> Learn More </span> </a>
+
+					<a href="#"> <span class="job_apply large_link"> Apply </span> </a>
+
+				</div>
+
+				<div class="job_posting">
+
+					<div class="job_posting_logo">
+
+					</div>
+
+					<h2> Junior Designer </h2>
+					<h3> Albert Frost Artistics </h3>
+					
+					<a href="#"> <span class="job_learn_more large_link"> Learn More </span> </a>
+
+					<a href="#"> <span class="job_apply large_link"> Apply </span> </a>
+
+				</div>
+
+			</div>
+			<!-- END OF briefcase_page -->
+
+
+			<div class="user_page side_portal_page">
+				<h4> Current Job Postings </h4>
+
+				<div class="job_posting">
+
+					<div class="job_posting_logo">
+
+					</div>
+
+					<h2> USER PAGE </h2>
+					<h3> Forrest Hostpital </h3>
+					
+					<a href="#"> <span class="job_learn_more large_link"> Learn More </span> </a>
+
+					<a href="#"> <span class="job_apply large_link"> Apply </span> </a>
+
+				</div>
+
+				<div class="job_posting">
+
+					<div class="job_posting_logo">
+
+					</div>
+
+					<h2> Junior Designer </h2>
+					<h3> Albert Frost Artistics </h3>
 					
 					<a href="#"> <span class="job_learn_more large_link"> Learn More </span> </a>
 
@@ -229,15 +281,38 @@
     $(document).ready(function(){
 
     	// NEWS AND MY VIEWERSHIP TABS
-    	$('.news_tab').click(function(){
+    	$('.news_tab').click(function(e){
     		$('.viewership_page').hide();
     		$('.news_updates_page').show();
+    		e.preventDefault();
     	});
 
-    	$('.viewership_tab').click(function(){
+    	$('.viewership_tab').click(function(e){
     		$('.news_updates_page').hide();
     		$('.viewership_page').show();
+    		e.preventDefault();
     	});
+
+
+    	// USER PORTAL MENU TABS
+    	$('.briefcase_tab').click(function(e){
+    		$('.user_page').hide();
+    		$('.education_page').hide();
+    		$('.heart_page').hide();
+    		$('.briefcase_page').show();
+
+    		e.preventDefault();
+    	});
+
+    	$('.user_tab').click(function(e){
+    		$('.briefcase_page').hide();
+    		$('.education_page').hide();
+    		$('.heart_page').hide();
+    		$('.user_page').show();
+
+    		e.preventDefault();
+    	});
+
 
 
     	$('.time_span').click(function(){

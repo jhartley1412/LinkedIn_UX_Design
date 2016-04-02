@@ -195,7 +195,7 @@
 
 .job_posting{
 	width: 80%;
-	margin: 0 auto;
+	margin: 2em auto;
 	
 	h2{
 		color: $header_color;
@@ -219,6 +219,10 @@
 	display: block;
 }
 
+
+.user_page{
+	display: none;
+}
 
 
 
