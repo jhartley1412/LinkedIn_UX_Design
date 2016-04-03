@@ -46,7 +46,7 @@
 			
 			<div class="center_content_nav">
 				<a href="#">
-				<div class="news_tab center_current_tab center_content_tab">
+				<div class="news_tab current_tab center_content_tab">
 					<h2> News Updates </h2>
 				</div>
 				</a>
@@ -131,7 +131,7 @@
 
 					<a href="#"> <div class="article_container">
 						<div class="article_img_container">
-							<img class="article_img" src="./images/picjumbo.com_HNCK5322.jpg">
+							<img class="article_img pilot_img" src="./images/picjumbo.com_HNCK5322.jpg">
 						</div>
 
 						<h3> Stormy Weather Headed for Happy Grills Management </h3>
@@ -187,32 +187,34 @@
 
 
 
+
+
 		<!-- RIGHT SIDE PORTAL WITH BUSINESS/USER/ETC TABS -->
 		<div class="side_portal col_sm_1">
 			
 			<!-- SIDE PORTAL NAVIGATION W/ ICONS -->
 			<div class="side_portal_nav">
-				<a href="#" class="portal_tab_icons"> 
-					<img class="briefcase_tab portal_icons" src="./images/briefcase_icon.png">
+				<a href="#" class="jobs_tab current_tab portal_tab_icons"> 
+					<img class="portal_icons" src="./images/briefcase_icon.png">
 				</a>
 
-				<a href="#" class="portal_tab_icons"> 
-					<img class="user_tab portal_icons" src="./images/user_icon.png">
+				<a href="#" class="user_tab portal_tab_icons"> 
+					<img class="portal_icons" src="./images/user_icon.png">
 				</a>
 
-				<a href="#" class="portal_tab_icons"> 
-					<img class="education_tab portal_icons" src="./images/education_icon.png">
+				<a href="#" class="education_tab portal_tab_icons"> 
+					<img class="portal_icons" src="./images/education_icon.png">
 				</a>
 
-				<a href="#" class="portal_tab_icons"> 
-					<img class="heart_tab portal_icons" src="./images/heart_icon.png">
+				<a href="#" class="heart_tab portal_tab_icons"> 
+					<img class="portal_icons" src="./images/heart_icon.png">
 				</a>
 			</div>
 			<!-- END OF side_portal_nav -->
 
 
 			<!-- SIDE PORTAL INDIVISUAL PAGES -->
-			<div class="briefcase_page side_portal_page">
+			<div class="jobs_page side_portal_page">
 				<h4> Current Job Postings </h4>
 
 				<div class="job_posting">
@@ -291,7 +293,7 @@
 				</div>
 
 			</div>
-			<!-- END OF briefcase_page -->
+			<!-- END OF jobs_page -->
 
 
 
@@ -391,7 +393,7 @@
 			<div class="education_page side_portal_page">
 				
 				<h4> Further Your Education </h4>
-				<p> Planning to attend a university? How about going back to school to get that perfect degree? Are you looking to further your education? We’ve got you covered. Thanks to LinkedIn resources, we can help you find the perfect degree or get into the perfect school so you can advance your skills, knowledge an network! </p>
+				<p> Planning to attend a university? How about going back to school or  looking to further your education? We’ve got you covered. Thanks to LinkedIn resources, we can help you find the perfect degree or get into the perfect school so you can advance your skills, knowledge an network! </p>
 
 
 				<div class="education_college_container">
@@ -462,19 +464,19 @@
     	// NEWS AND MY VIEWERSHIP TABS
     	$('.news_tab').click(function(e){
     		$('.viewership_page').hide();
-    		$('.viewership_tab').removeClass('center_current_tab');
+    		$('.viewership_tab').removeClass('current_tab');
 
     		$('.news_updates_page').show();
-    		$('.news_tab').addClass('center_current_tab');
+    		$('.news_tab').addClass('current_tab');
     		e.preventDefault();
     	});
 
     	$('.viewership_tab').click(function(e){
     		$('.news_updates_page').hide();
-    		$('.news_tab').removeClass('center_current_tab');
+    		$('.news_tab').removeClass('current_tab');
 
     		$('.viewership_page').show();
-    		$('.viewership_tab').addClass('center_current_tab');
+    		$('.viewership_tab').addClass('current_tab');
     		e.preventDefault();
     	});
 
@@ -494,38 +496,58 @@
 
 
     	// USER PORTAL MENU TABS
-    	$('.briefcase_tab').click(function(e){
+    	$('.jobs_tab').click(function(e){
     		$('.user_page').hide();
+    		$('.user_tab').removeClass('current_tab');
     		$('.education_page').hide();
+    		$('.education_tab').removeClass('current_tab');
     		$('.heart_page').hide();
-    		$('.briefcase_page').show();
+    		$('.heart_page').removeClass('current_tab');
+
+    		$('.jobs_page').show();
+    		$('.jobs_tab').addClass('current_tab');
 
     		e.preventDefault();
     	});
 
     	$('.user_tab').click(function(e){
-    		$('.briefcase_page').hide();
+    		$('.jobs_page').hide();
+    		$('.jobs_tab').removeClass('current_tab');
     		$('.education_page').hide();
+    		$('.education_tab').removeClass('current_tab');
     		$('.heart_page').hide();
+    		$('.heart_tab').removeClass('current_tab');
+
     		$('.user_page').show();
+    		$('.user_tab').addClass('current_tab');
 
     		e.preventDefault();
     	});
 
     	$('.education_tab').click(function(e){
-    		$('.briefcase_page').hide();
+    		$('.jobs_page').hide();
+    		$('.jobs_tab').removeClass('current_tab');
     		$('.user_page').hide();
+    		$('.user_tab').removeClass('current_tab');
     		$('.heart_page').hide();
+    		$('.heart_tab').removeClass('current_tab');
+
     		$('.education_page').show();
+    		$('.education_tab').addClass('current_tab');
 
     		e.preventDefault();
     	});
 
     	$('.heart_tab').click(function(e){
-    		$('.briefcase_page').hide();
+    		$('.jobs_page').hide();
+    		$('.jobs_tab').removeClass('current_tab');
     		$('.user_page').hide();
+    		$('.user_tab').removeClass('current_tab');
     		$('.education_page').hide();
+    		$('.education_tab').removeClass('current_tab');
+
     		$('.heart_page').show();
+    		$('.heart_tab').addClass('current_tab');
 
     		e.preventDefault();
     	});

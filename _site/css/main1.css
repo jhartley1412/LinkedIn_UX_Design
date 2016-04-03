@@ -630,6 +630,9 @@ a {
   top: -50px;
   position: absolute; }
 
+.pilot_img {
+  width: 130%; }
+
 .tab_info {
   padding: 1em; }
 
@@ -967,6 +970,9 @@ a {
     float: left;
     clear: both; }
 
+.education_class_container {
+  margin-bottom: 4em; }
+
 .college_img, .class_img {
   width: 30%;
   height: 60px;
@@ -1129,9 +1135,6 @@ a.footer_link {
   width: 50%;
   background-color: #eef1f6; }
 
-.center_current_tab {
-  background-color: white; }
-
 .search_bar_outer {
   width: 100%;
   position: absolute;
@@ -1164,12 +1167,15 @@ a.footer_link {
   position: relative; }
 
 .side_portal_nav {
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
 
 .portal_tab_icons {
   width: 25%;
   float: left;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #eef1f6;
+  border-left: 1px solid #a7b8d1; }
   .portal_tab_icons img {
     display: block; }
 
@@ -1186,3 +1192,7 @@ a.footer_link {
 
 .user_page, .education_page, .heart_page {
   display: none; }
+
+.current_tab {
+  background-color: white;
+  border-bottom: 0; }
