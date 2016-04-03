@@ -44,7 +44,6 @@ h4{
 
 h5{
 	z-index: 2;
-	font-size: 4em;
 	margin: 0 auto;
 	position: absolute;
 	top: 0;
@@ -66,14 +65,6 @@ a {
 	}
 }
 
-.large_link{
-	font-size: 1.3em;
-	color: $links_color;
-
-	&:hover{
-		color: $links_hover;
-	}
-}
 
 
 

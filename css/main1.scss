@@ -40,6 +40,14 @@ li{
 	}
 }
 
+.large_link{
+	color: $links_color;
+
+	&:hover{
+		color: $links_hover;
+	}
+}
+
 
 // CENTER CONTAINERS 
 // (NEWS FEED AND VIEWERSHIP)
@@ -102,7 +110,6 @@ li{
 }
 
 .side_portal{
-	width: 100%;
 	border: 1px solid $accent_color;
 	overflow: hidden;
 	position: relative;
