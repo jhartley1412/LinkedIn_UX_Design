@@ -8,14 +8,20 @@
 	overflow: hidden;
 }
 
+.big_number_img_container{
+	position: relative;
+}
 
 .big_number_img{
+	z-index: 1;
 	width: 100%;
+	position: absolute;
 }
 
 .viewership_text{
 	box-sizing: border-box;
 	position: relative;
+	margin-left: 30%;
 }
 
 .time_span_dropdown{
