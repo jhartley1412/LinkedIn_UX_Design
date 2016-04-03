@@ -27,17 +27,21 @@
     <!--This include tag adds /_includes/header.html to every page that has layout: default in the front matter -->
     <header class="site-header">
 	
-	<div class="header_logo">
-	</div>
+	<div class="header_content_container">
 
-	<div class="header_links">
-		<a href="#"> Home </a>
+		<div class="header_logo">
+		</div>
 
-		<a href="#"> Profile </a>
+		<div class="header_links">
+			<a href="#"> Home </a>
 
-		<a href="#"> Business Services </a>
+			<a href="#"> Profile </a>
 
-		<a href="#"> Try Premium </a>
+			<a href="#"> Business Services </a>
+
+			<a href="#"> Try Premium </a>
+		</div>
+		
 	</div>
 
 </header>
@@ -721,6 +725,35 @@
 			$('.viewership_dropdown').hide();
 			e.preventDefault();
 		});
+
+
+
+		// // BREAKPOINTS
+
+		// var isBreakPoint = function (bp) {
+		//     var bps = [0, 500, 860],
+		//         w = $(window).width(),
+		//         min, max
+
+		//     for (var i = 0, l = bps.length; i < l; i++) {
+		//       if (bps[i] === bp) {
+		//         min = bps[i-1] || 0
+		//         max = bps[i]
+		//         break
+		//       }
+		//     }
+		//     return w > min && w <= max
+		// }
+
+		// // Usage
+		// if (isBreakPoint(500)){
+		// 	$('.news_updates_page').show();
+  //   		$('.news_tab').addClass('current_tab');
+
+  //   		$('.viewership_page').show();
+  //   		$('.viewership_tab').addClass('current_tab');
+  //   		e.preventDefault();
+		// } 
 
 
 
