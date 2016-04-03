@@ -522,6 +522,12 @@ a {
   .large_link:hover {
     color: #005fb2; }
 
+.profile_avatar {
+  width: 80px; }
+
+.profile_img {
+  width: 100%; }
+
 .profile_info {
   box-sizing: border-box;
   padding: 1em;
@@ -597,15 +603,15 @@ a {
   display: block;
   padding: 2em; }
 
-.news_checklist .fa-caret-down {
-  margin-top: -5px;
-  color: #a7b8d1; }
-  .news_checklist .fa-caret-down:hover {
-    color: #4f6a92; }
-
 .news_checklist {
   width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
+  .news_checklist .fa-caret-down {
+    margin-top: -5px;
+    color: #a7b8d1; }
+    .news_checklist .fa-caret-down:hover {
+      color: #4f6a92; }
 
 .article_container {
   width: 80%;
@@ -645,6 +651,31 @@ a {
     float: left; }
   .more_articles:hover {
     color: #4f6a92; }
+
+.news_dropdown {
+  z-index: 2;
+  width: 150px;
+  height: 160px;
+  overflow: scroll;
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid #a7b8d1;
+  position: absolute;
+  right: -5px;
+  display: none; }
+
+ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0; }
+
+li {
+  margin-bottom: 0.5em;
+  padding: 0 1em 0.5em 1em;
+  border-bottom: 1px solid #a7b8d1; }
+  li:last-child {
+    padding-bottom: 0;
+    border-bottom: 0; }
 
 body {
   font-family: "proxima-nova-soft", "Tahoma", sans-serif;
@@ -715,6 +746,21 @@ a {
   clear: both;
   margin-top: 150px;
   background-color: #00396b; }
+
+.big_number_img_container {
+  width: 30%;
+  float: left; }
+
+.viewership_text {
+  width: 70%;
+  margin-top: 1em;
+  padding: 0.5em;
+  float: left; }
+
+.time_span {
+  padding: 0.3em;
+  padding-right: 1em;
+  border: 1px solid #a7b8d1; }
 
 .viewer_stats_container {
   width: 80%;
@@ -1056,27 +1102,6 @@ a.footer_link {
     width: 100%;
     margin-right: 2%; } }
 @media (min-width: 0) {
-  .profile_avatar {
-    width: 80px; }
-
-  .profile_img {
-    width: 100%; }
-
-  .big_number_img_container {
-    width: 30%;
-    float: left; }
-
-  .viewership_text {
-    width: 70%;
-    margin-top: 1em;
-    padding: 0.5em;
-    float: left; }
-
-  .time_span {
-    padding: 0.3em;
-    padding-right: 1em;
-    border: 1px solid #a7b8d1; }
-
   .side_portal_page {
     max-height: 400px;
     overflow: scroll; } }
@@ -1098,8 +1123,14 @@ a.footer_link {
 
 .center_content_tab {
   box-sizing: border-box;
+  padding: 1em;
+  padding-left: 1.3em;
   float: left;
-  width: 50%; }
+  width: 50%;
+  background-color: #eef1f6; }
+
+.center_current_tab {
+  background-color: white; }
 
 .search_bar_outer {
   width: 100%;

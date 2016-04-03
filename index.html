@@ -39,11 +39,14 @@
 
 		</div>
 
+
+
+		<!-- CENTER CONTENT AND NAVIGATION -->
 		<div class="center_content_container col_sm_1">
 			
 			<div class="center_content_nav">
 				<a href="#">
-				<div class="news_tab center_content_tab">
+				<div class="news_tab center_current_tab center_content_tab">
 					<h2> News Updates </h2>
 				</div>
 				</a>
@@ -61,39 +64,51 @@
 				<!-- CHECKLIST OF POSSIBLE NEWS GENRES FOR USER TO CHOOSE FROM -->
 				<div class="news_checklist">
 					<div class="news_genre">
-						<input type="checkbox"/> Design
+						<input type="checkbox" checked> Design
 					</div>
 
 					<div class="news_genre">
-						<input type="checkbox"/> Business
+						<input type="checkbox" checked> Business
 					</div>
 
 					<div class="news_genre">
-						<input type="checkbox"/> Fashion
+						<input type="checkbox" checked> Fashion
 					</div>
 
-					<a href="#"> <i class="fa fa-caret-down fa-2x"></i> </a>
+					<a href="#"> <i class="fa fa-caret-down news_checklist_carot fa-2x"></i> </a>
 
-				<!-- begining dropdown menu 	<dd>
+					<dd class="news_dropdown">
 						<ul>
 							<li> 
-								<input type="checkbox"/> Politics
+								<input type="checkbox" checked> Politics
 							</li>
 
 							<li> 
-								<input type="checkbox"/> Hollywood
+								<input type="checkbox" checked> Finance
 							</li>
 
 							<li> 
-								<input type="checkbox"/> Finance
+								<input type="checkbox" checked> Marketing
 							</li>
 
 							<li> 
-								<input type="checkbox"/> Marketing
+								<input type="checkbox"> Health
+							</li>
+
+							<li> 
+								<input type="checkbox"> Travel
+							</li>
+
+							<li> 
+								<input type="checkbox"> Social
+							</li>
+
+							<li> 
+								<input type="checkbox" > Hollywood
 							</li>
 
 						</ul>
-					</dd> -->
+					</dd>
 
 				</div>
 
@@ -137,7 +152,11 @@
 				</div>
 
 			</div>
+			<!-- END OF news_updates_page -->
 
+
+
+			<!-- MY VIEWERSHIP PAGE -->
 			<div class="viewership_page tab_info">
 				<div class="big_number_img_container">
 					<img class="big_number_img" src="./images/bubbles_icon.png">
@@ -443,15 +462,35 @@
     	// NEWS AND MY VIEWERSHIP TABS
     	$('.news_tab').click(function(e){
     		$('.viewership_page').hide();
+    		$('.viewership_tab').removeClass('center_current_tab');
+
     		$('.news_updates_page').show();
+    		$('.news_tab').addClass('center_current_tab');
     		e.preventDefault();
     	});
 
     	$('.viewership_tab').click(function(e){
     		$('.news_updates_page').hide();
+    		$('.news_tab').removeClass('center_current_tab');
+
     		$('.viewership_page').show();
+    		$('.viewership_tab').addClass('center_current_tab');
     		e.preventDefault();
     	});
+
+
+
+    	// NEWS GENRE DROPDOWN
+		$('.news_checklist_carot').click(function(e){
+			$('.news_dropdown').show();
+			e.preventDefault();
+		});
+
+		$('.news_dropdown').mouseleave(function(e){
+			$('.news_dropdown').hide();
+			e.preventDefault();
+		});
+
 
 
     	// USER PORTAL MENU TABS

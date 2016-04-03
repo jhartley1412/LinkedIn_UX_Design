@@ -42,9 +42,24 @@
 
 .center_content_tab{
 	box-sizing: border-box;
+	padding: 1em;
+	padding-left: 1.3em;
 	float: left;
 	width: 50%;
+	background-color: $light_accent;
 }
+
+.center_current_tab{
+	background-color: white;
+
+}
+
+
+
+
+
+
+// SEARCH BAR 
 
 .search_bar_outer{
 	width: 100%;

@@ -32,6 +32,24 @@
 	background-color: $header_color;
 }
 
+.big_number_img_container{
+	width: 30%;
+	float: left;
+}
+
+.viewership_text{
+	width: 70%;
+	margin-top: 1em;
+	padding: 0.5em;
+	float: left;
+}
+
+.time_span{
+	padding: 0.3em;
+	padding-right: 1em;
+	border: 1px solid $accent_color;
+}
+
 .viewer_stats_container{
 	width: 80%;
 	margin: 0 auto;
