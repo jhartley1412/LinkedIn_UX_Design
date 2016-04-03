@@ -58,16 +58,20 @@
 				</a>
 			</div>
 
+			<div class="profile_name_container_medium">
+				<h1 class="profile_name_medium"> Mary Gray </h1>
+				<h2 class="profile_job_medium"> Waitress at Happy Grill </h2>
+			</div>
+
 
 			<!-- NEWS PAGE -->
 			<div class="news_updates_page tab_info">
-				
 
 				<!-- CHECKLIST OF POSSIBLE NEWS GENRES FOR USER TO CHOOSE FROM -->
-				
-				<h2 class="news_title_medium"> News Updates </h2>
+				<div class="news_title_container_medium">
+					<h2> News Updates </h2>
 
-				<div class="news_checklist">
+					<div class="news_checklist_medium">
 					<div class="news_genre">
 						<input type="checkbox" checked> Design
 					</div>
@@ -80,9 +84,60 @@
 						<input type="checkbox" checked> Fashion
 					</div>
 
-					<a href="#"> <i class="fa fa-caret-down news_checklist_carot fa-2x"></i> </a>
+					<a href="#"> <i class="fa fa-caret-down news_checklist_carot_medium fa-2x"></i> </a>
 
 					<dd class="news_dropdown">
+						<ul>
+							<li> 
+								<input type="checkbox" checked> Politics
+							</li>
+
+							<li> 
+								<input type="checkbox" checked> Finance
+							</li>
+
+							<li> 
+								<input type="checkbox" checked> Marketing
+							</li>
+
+							<li> 
+								<input type="checkbox"> Health
+							</li>
+
+							<li> 
+								<input type="checkbox"> Travel
+							</li>
+
+							<li> 
+								<input type="checkbox"> Social
+							</li>
+
+							<li> 
+								<input type="checkbox" > Hollywood
+							</li>
+
+						</ul>
+					</dd>
+
+				</div>
+				</div>
+
+				<div class="news_checklist_small">
+					<div class="news_genre">
+						<input type="checkbox" checked> Design
+					</div>
+
+					<div class="news_genre">
+						<input type="checkbox" checked> Business
+					</div>
+
+					<div class="news_genre">
+						<input type="checkbox" checked> Fashion
+					</div>
+
+					<a href="#"> <i class="fa fa-caret-down news_checklist_carot_small fa-2x"></i> </a>
+
+					<dd class="news_dropdown_small">
 						<ul>
 							<li> 
 								<input type="checkbox" checked> Politics
@@ -509,13 +564,23 @@
 
 
     	// NEWS GENRE DROPDOWN
-		$('.news_checklist_carot').click(function(e){
-			$('.news_dropdown').show();
+		$('.news_checklist_carot_small').click(function(e){
+			$('.news_dropdown_small').show();
 			e.preventDefault();
 		});
 
-		$('.news_dropdown').mouseleave(function(e){
-			$('.news_dropdown').hide();
+		$('.news_dropdown_small').mouseleave(function(e){
+			$('.news_dropdown_small').hide();
+			e.preventDefault();
+		});
+
+		$('.news_checklist_carot_medium').click(function(e){
+			$('.news_dropdown_medium').show();
+			e.preventDefault();
+		});
+
+		$('.news_dropdown_medium').mouseleave(function(e){
+			$('.news_dropdown_medium').hide();
 			e.preventDefault();
 		});
 

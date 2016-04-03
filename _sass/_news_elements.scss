@@ -4,12 +4,10 @@
 
 .news_updates_page{
 	display: block;
-	padding: 2em;
 }
 
 
-.news_checklist{
-	width: 80%;
+.news_checklist_small{
 	margin: 0 auto;
 	position: relative;
 
@@ -21,6 +19,27 @@
 			color: $text-color;
 		}
 	}
+}
+
+.news_checklist_medium{
+	margin: 0 auto;
+	position: relative;
+
+	.fa-caret-down{
+		margin-top: -5px;
+		color: $accent_color;
+
+		&:hover{
+			color: $text-color;
+		}
+	}
+}
+
+.news_title_container_medium{
+	width: 100%;
+	padding: 1em 2em;
+	box-sizing: border-box;
+	background-color: $light_accent;
 }
 
 .article_container{
@@ -78,7 +97,7 @@
 }
 
 
-.news_dropdown{
+.news_dropdown_small{
 	z-index: 2;
 	width: 150px;
 	height: 160px;
@@ -88,6 +107,19 @@
 	border: 1px solid $accent_color;
 	position: absolute;
 	right: -5px;
+	display: none;
+}
+
+.news_dropdown_medium{
+	z-index: 2;
+	width: 150px;
+	height: 160px;
+	overflow: scroll;
+	box-sizing: border-box;
+	background-color: white;
+	border: 1px solid $accent_color;
+	position: absolute;
+	right: -20px;
 	display: none;
 }
 
