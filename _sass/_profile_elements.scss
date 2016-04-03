@@ -3,10 +3,6 @@
 @import 'variables_type1';
 
 
-.profile_avatar{
-	width: 80px;
-}
-
 .profile_img{
 	width: 100%;
 }
@@ -21,7 +17,7 @@
 	float: left;
 }
 
-.profile_name, .profile_job, .message_notifications_container{
+.profile_name_small, .profile_job_small{
 	float: left;
 	padding-left: 2rem;
 }
@@ -30,14 +26,10 @@
 	margin-bottom: 0.5em;
 }
 
-.blue_icon{
-	padding-top: 0.5em;
-	padding-right: 0.5em;
-	width: 40px;
-	height: 40px;
-}
-
 .see_connections{
 	padding-right: 0.5em;
 	padding-bottom: 0.5em;
 }
+
+
+

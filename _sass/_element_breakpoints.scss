@@ -2,12 +2,90 @@
 
 @media(min-width: 0){
 
+	.profile_info{
+		overflow: hidden;
+	}
+
+	.profile_avatar{
+		width: 80px;
+	}
+	
+	.profile_name_small, .profile_job_small{
+		display: inline-block;
+	}
+
+	.message_notifications_container{
+		float: left;
+		padding-left: 2rem;
+	}
+
+	.blue_icon{
+		padding-top: 0.5em;
+		padding-right: 0.5em;
+		width: 40px;
+		height: 40px;
+		float: none;
+	}
+	
+	.center_content_container{
+		width: 100%;
+		float: none;
+	}
+
+	.center_content_nav{
+		display: block;
+	}
+
+	.news_title_medium{
+		display: none;
+	}
 
 	.side_portal_page{
 		max-height: 400px;
 		overflow: scroll;
 	}
 
+
+}
+
+
+@media(min-width: 500px){
+
+	.profile_info{
+		overflow: auto;
+	}
+
+	.profile_avatar{
+		width: 100%;
+		max-width: 80px;
+	}
+	
+	.profile_name_small, .profile_job_small{
+		display: none;
+	}
+
+	.message_notifications_container{
+		padding-left: 0;
+
+		.blue_icon{
+			float: left;
+			width: 45%;
+			max-width: 40px;
+		}
+	}
+
+	.center_content_container{
+		float: left;
+	}
+
+	.center_content_nav{
+		display: none;
+	}	
+
+	.news_title_medium{
+		display: inline-block;
+		margin-bottom: 2em;
+	}
 
 }
 
