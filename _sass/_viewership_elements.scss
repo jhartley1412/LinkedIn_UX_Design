@@ -3,8 +3,10 @@
 
 
 .viewership_page{
+	z-index: 1;
 	box-sizing: border-box;
 	overflow: hidden;
+	position: relative;
 }
 
 .big_number_img_container{
@@ -18,9 +20,18 @@
 }
 
 .viewership_text{
+	z-index: 1;
+	margin-top: 1em;
+	margin-left: 30%;
+	padding: 0.5em;
 	box-sizing: border-box;
 	position: relative;
-	margin-left: 30%;
+	float: left;
+
+
+	a{
+		color: $text_color;
+	}
 }
 
 .time_span_dropdown{
@@ -40,17 +51,6 @@
 .big_number_img_container{
 	width: 30%;
 	float: left;
-}
-
-.viewership_text{
-	width: 70%;
-	margin-top: 1em;
-	padding: 0.5em;
-	float: left;
-
-	a{
-		color: $text_color;
-	}
 }
 
 .time_span{
@@ -103,7 +103,6 @@
 	background-color: white;
 	border: 1px solid $accent_color;
 	position: absolute;
-	right: -5px;
 	display: none;
 
 	a{
