@@ -191,19 +191,38 @@
 				
 				<div class="viewership_text">
 					
-					<p> 26 people have viewed your profile page in the last <span class="time_span"> 1 week </span> </p>
+					<p> 26 people have viewed your profile page in the last 
 
-					<!-- <div class="time_span_dropdown">
-						<p> I'm gonna be text some day :D </p>
-					</div> -->
+					<a href="#"> <span class="time_span one_week current_time_span"> 1 week </span></a>
+
+					<a href="#"> <span class="time_span today"> Today </span></a>
+
+					<a href="#"> <span class="time_span one_month"> 1 month </span></a>
+
+					<a href="#"> <span class="time_span one_year"> 1 year </span></a>
+
+					<a href="#"> <span class="time_span six_months"> 6 months </span></a> 
+					</p>
+
+					<dd class="viewership_dropdown">
+						<ul>
+							<a href="#"> <li> Today </li> </a>
+
+							<a href="#"> <li> 1 month </li> </a>
+
+							<a href="#"> <li> 6 month </li> </a>
+
+							<a href="#"> <li> 1 Year </li> </a>
+						</ul>
+					</dd>
 
 				</div>
 
 				<div class="graph"> </div>
 
 				<div class="viewer_stats_container">
-					<a href="#"> See more viewer statistics </a>
-					<a href="#"> Get more viewership </a>
+					<a href="#" class="large_link"> See more viewer statistics </a>
+					<a href="#" class="large_link"> Get more viewership </a>
 				</div>
 
 			</div>
@@ -594,10 +613,16 @@
 
 
 
-    	$('.time_span').click(function(){
-    		$('.time_span_dropdown').width($('.time_span').width());
-    		$('.time_span_dropdown').show();
+    	// VIEWERSHIP TIME SPAN SHOWN
+    	$('.current_time_span').click(function(){
+    		$('.viewership_dropdown').show();
+    		e.preventDefault();
     	});
+
+    	$('.viewership_dropdown').mouseleave(function(e){
+			$('.viewership_dropdown').hide();
+			e.preventDefault();
+		});
 
     });
 

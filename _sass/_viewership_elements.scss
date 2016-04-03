@@ -42,6 +42,10 @@
 	margin-top: 1em;
 	padding: 0.5em;
 	float: left;
+
+	a{
+		color: $text_color;
+	}
 }
 
 .time_span{
@@ -59,3 +63,54 @@
 		padding-right: 1em;
 	}
 }
+
+.today{
+	display: none;
+}
+
+
+.one_week{
+	display: none;
+}
+
+.one_month{
+	display: none;
+}
+
+.six_months{
+	display: none;
+}
+
+.one_year{
+	display: none;
+}
+
+.current_time_span{
+	display: inline-block;
+}
+
+.viewership_dropdown{
+	z-index: 2;
+	width: 150px;
+	height: 160px;
+	overflow: scroll;
+	box-sizing: border-box;
+	background-color: white;
+	border: 1px solid $accent_color;
+	position: absolute;
+	right: -5px;
+	display: none;
+
+	a{
+		margin-bottom: 0.5em;
+		border-bottom: 1px solid $accent_color;
+	}
+}
+
+
+
+
+
+
+
+
