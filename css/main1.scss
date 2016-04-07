@@ -78,6 +78,11 @@ li{
 	background-color: $light_accent;
 }
 
+// SPECIFICALLY FOR MOBILE NEW TAB ACTIVE
+.right_border{
+	border-left: 1px solid $accent_color;
+}
+
 
 
 // SEARCH BAR 
@@ -95,7 +100,6 @@ li{
 	border: 1px solid $accent_color;
 
 	input{
-		width: 250px;
 		border-radius: 10px;
 		float: left;
 	}
@@ -108,13 +112,11 @@ li{
 }
 
 .search_bar_inner{
-	width: 275px;
 	margin: 0 auto;
 	overflow: hidden;
 }
 
 .side_portal{
-	border: 1px solid $accent_color;
 	overflow: hidden;
 	position: relative;
 }
@@ -134,6 +136,10 @@ li{
 	img{
 		display: block;
 	}
+
+	&:first-child{
+		border-left: none;
+	}
 }
 
 .portal_icons{
@@ -144,10 +150,8 @@ li{
 
 .side_portal_page{
 	width: 100%;
-	margin-top: 2em;
+	overflow: scroll;
 	box-sizing: border-box;
-	padding: 2em;
-	padding-top: 0;
 }
 
 
@@ -158,6 +162,11 @@ li{
 .current_tab{
 	background-color: white;
 	border-bottom: 0;
+}
+
+
+.news_checkbox{
+	background-color: green;
 }
 
 

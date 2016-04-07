@@ -18,11 +18,12 @@
 
       <div class="wrapper">
 		
-		<div class="profile_info col_sm_1 col_md_2">
+		<div class="profile_info col_sm_1 col_md_3">
 			
 			<div class="profile_avatar"> 
 				<img class="profile_img" src="./images/profile_icon.png">
 				<a href="edit_profile"> Edit Profile </a>
+				<a href="#" class="see_connections"> See Connections </a>
 			</div>
 			
 			<h1 class="profile_name_small"> Mary Gray </h1>
@@ -33,10 +34,17 @@
 				<a href="#"> <img class="message_icon blue_icon" src="./images/message_icon.png"> </a>
 
 				<a href="#"> <img class="notifications_icon blue_icon" src="./images/notifications_icon.png"> </a>
-
-				<a href="#" class="see_connections"> See Connections </a>
 			</div>
 
+		</div>
+
+		<!-- END OF profile_info -->
+
+
+
+		<div class="profile_name_container_medium col_md_12">
+			<h1 class="profile_name_medium"> Mary Gray </h1>
+			<h2 class="profile_job_medium"> Waitress at Happy Grill </h2>
 		</div>
 
 
@@ -46,7 +54,7 @@
 			
 			<div class="center_content_nav">
 				<a href="#">
-				<div class="news_tab current_tab center_content_tab">
+				<div class="news_tab current_tab right_border center_content_tab">
 					<h2> News Updates </h2>
 				</div>
 				</a>
@@ -56,11 +64,6 @@
 					<h2> My Viewership </h2>
 				</div>
 				</a>
-			</div>
-
-			<div class="profile_name_container_medium">
-				<h1 class="profile_name_medium"> Mary Gray </h1>
-				<h2 class="profile_job_medium"> Waitress at Happy Grill </h2>
 			</div>
 
 
@@ -90,7 +93,7 @@
 						<ul>
 							<a href="#">
 							<li> 
-								<input type="checkbox" checked> Politics
+								<input type="checkbox" class="news_checkbox" checked> Politics
 							</li>
 							</a>
 
@@ -420,7 +423,7 @@
 
 						<a href="#"> <span class="connect_link large_link"> Connect </span> </a>
 
-						<a href="#"> <span class="IDK_link large_link"> I don't know this person </span> </a>
+						<a href="#"> <span class="IDK_link large_link"> I don't know them </span> </a>
 					</div>
 
 				</div>
@@ -438,7 +441,7 @@
 
 						<a href="#"> <span class="connect_link large_link"> Connect </span> </a>
 
-						<a href="#"> <span class="IDK_link large_link"> I don't know this person </span> </a>
+						<a href="#"> <span class="IDK_link large_link"> I don't know them </span> </a>
 					</div>
 
 				</div>
@@ -456,7 +459,7 @@
 
 						<a href="#"> <span class="connect_link large_link"> Connect </span> </a>
 
-						<a href="#"> <span class="IDK_link large_link"> I don't know this person </span> </a>
+						<a href="#"> <span class="IDK_link large_link"> I don't know them </span> </a>
 					</div>
 
 				</div>
@@ -474,7 +477,7 @@
 					
 						<a href="#"> <span class="connect_link large_link"> Connect </span> </a>
 
-						<a href="#"> <span class="IDK_link large_link"> I don't know this person </span> </a>
+						<a href="#"> <span class="IDK_link large_link"> I don't know them </span> </a>
 					</div>
 
 				</div>
@@ -561,35 +564,38 @@
     <!--This include tag adds /_includes/footer.html to every page that has layout: default in the front matter -->
     {% include footer.html %}
 	
-	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 
-    <script>
-
-    $(document).ready(function(){
+	<script type="text/javascript" src="jquery/flowtype.js"></script>
 
 
-    	// NEWS AND MY VIEWERSHIP TABS
-    	$('.news_tab').click(function(e){
-    		$('.viewership_page').hide();
-    		$('.viewership_tab').removeClass('current_tab');
-
-    		$('.news_updates_page').show();
-    		$('.news_tab').addClass('current_tab');
-    		e.preventDefault();
-    	});
-
-    	$('.viewership_tab').click(function(e){
-    		$('.news_updates_page').hide();
-    		$('.news_tab').removeClass('current_tab');
-
-    		$('.viewership_page').show();
-    		$('.viewership_tab').addClass('current_tab');
-    		e.preventDefault();
-    	});
+	<script>
+		
+	$(document).ready(function(){
 
 
+		// NEWS AND MY VIEWERSHIP TABS
+		$('.news_tab').click(function(e){
+			$('.viewership_page').hide();
+			$('.viewership_tab').removeClass('current_tab');
 
-    	// NEWS GENRE DROPDOWN
+			$('.news_updates_page').show();
+			$('.news_tab').addClass('current_tab');
+			e.preventDefault();
+		});
+
+		$('.viewership_tab').click(function(e){
+			$('.news_updates_page').hide();
+			$('.news_tab').removeClass('current_tab');
+
+			$('.viewership_page').show();
+			$('.viewership_tab').addClass('current_tab');
+			e.preventDefault();
+		});
+
+		
+
+		// NEWS GENRE DROPDOWN
 		$('.news_checklist_carot_small').click(function(e){
 			$('.news_dropdown_small').show();
 			e.preventDefault();
@@ -612,111 +618,92 @@
 
 
 
-    	// USER PORTAL MENU TABS
-    	$('.jobs_tab').click(function(e){
-    		$('.user_page').hide();
-    		$('.user_tab').removeClass('current_tab');
-    		$('.education_page').hide();
-    		$('.education_tab').removeClass('current_tab');
-    		$('.heart_page').hide();
-    		$('.heart_page').removeClass('current_tab');
+		// USER PORTAL MENU TABS
+		$('.jobs_tab').click(function(e){
+			$('.user_page').hide();
+			$('.user_tab').removeClass('current_tab');
+			$('.education_page').hide();
+			$('.education_tab').removeClass('current_tab');
+			$('.heart_page').hide();
+			$('.heart_page').removeClass('current_tab');
 
-    		$('.jobs_page').show();
-    		$('.jobs_tab').addClass('current_tab');
+			$('.jobs_page').show();
+			$('.jobs_tab').addClass('current_tab');
 
-    		e.preventDefault();
-    	});
+			e.preventDefault();
+		});
 
-    	$('.user_tab').click(function(e){
-    		$('.jobs_page').hide();
-    		$('.jobs_tab').removeClass('current_tab');
-    		$('.education_page').hide();
-    		$('.education_tab').removeClass('current_tab');
-    		$('.heart_page').hide();
-    		$('.heart_tab').removeClass('current_tab');
+		$('.user_tab').click(function(e){
+			$('.jobs_page').hide();
+			$('.jobs_tab').removeClass('current_tab');
+			$('.education_page').hide();
+			$('.education_tab').removeClass('current_tab');
+			$('.heart_page').hide();
+			$('.heart_tab').removeClass('current_tab');
 
-    		$('.user_page').show();
-    		$('.user_tab').addClass('current_tab');
+			$('.user_page').show();
+			$('.user_tab').addClass('current_tab');
 
-    		e.preventDefault();
-    	});
+			e.preventDefault();
+		});
 
-    	$('.education_tab').click(function(e){
-    		$('.jobs_page').hide();
-    		$('.jobs_tab').removeClass('current_tab');
-    		$('.user_page').hide();
-    		$('.user_tab').removeClass('current_tab');
-    		$('.heart_page').hide();
-    		$('.heart_tab').removeClass('current_tab');
+		$('.education_tab').click(function(e){
+			$('.jobs_page').hide();
+			$('.jobs_tab').removeClass('current_tab');
+			$('.user_page').hide();
+			$('.user_tab').removeClass('current_tab');
+			$('.heart_page').hide();
+			$('.heart_tab').removeClass('current_tab');
 
-    		$('.education_page').show();
-    		$('.education_tab').addClass('current_tab');
+			$('.education_page').show();
+			$('.education_tab').addClass('current_tab');
 
-    		e.preventDefault();
-    	});
+			e.preventDefault();
+		});
 
-    	$('.heart_tab').click(function(e){
-    		$('.jobs_page').hide();
-    		$('.jobs_tab').removeClass('current_tab');
-    		$('.user_page').hide();
-    		$('.user_tab').removeClass('current_tab');
-    		$('.education_page').hide();
-    		$('.education_tab').removeClass('current_tab');
+		$('.heart_tab').click(function(e){
+			$('.jobs_page').hide();
+			$('.jobs_tab').removeClass('current_tab');
+			$('.user_page').hide();
+			$('.user_tab').removeClass('current_tab');
+			$('.education_page').hide();
+			$('.education_tab').removeClass('current_tab');
 
-    		$('.heart_page').show();
-    		$('.heart_tab').addClass('current_tab');
+			$('.heart_page').show();
+			$('.heart_tab').addClass('current_tab');
 
-    		e.preventDefault();
-    	});
-
-
-
-    	// VIEWERSHIP TIME SPAN SHOWN
-    	$('.current_time_span').click(function(e){
-    		$('.viewership_dropdown').show();
-    		e.preventDefault();
-    	});
-
-    	$('.viewership_dropdown').mouseleave(function(e){
-			$('.viewership_dropdown').hide();
 			e.preventDefault();
 		});
 
 
 
-		// // BREAKPOINTS
+		// VIEWERSHIP TIME SPAN SHOWN
+		$('.current_time_span').click(function(e){
+			$('.viewership_dropdown').show();
+			e.preventDefault();
+		});
 
-		// var isBreakPoint = function (bp) {
-		//     var bps = [0, 500, 860],
-		//         w = $(window).width(),
-		//         min, max
+		$('.viewership_dropdown').mouseleave(function(e){
+			$('.viewership_dropdown').hide();
+			e.preventDefault();
+		});
 
-		//     for (var i = 0, l = bps.length; i < l; i++) {
-		//       if (bps[i] === bp) {
-		//         min = bps[i-1] || 0
-		//         max = bps[i]
-		//         break
-		//       }
-		//     }
-		//     return w > min && w <= max
-		// }
 
-		// // Usage
-		// if (isBreakPoint(500)){
-		// 	$('.news_updates_page').show();
-  //   		$('.news_tab').addClass('current_tab');
-
-  //   		$('.viewership_page').show();
-  //   		$('.viewership_tab').addClass('current_tab');
-  //   		e.preventDefault();
-		// } 
+		// FLOWTYPE PLUGIN
+		// $('.big_number_img_container').flowtype({
+		// 	fontMax: 1.8em,
+		// 	fontMin: 1em;
+		// });
+		
 
 
 
 
-    });
 
-    </script>
+	});
+
+
+	</script>
 
   </body>
 

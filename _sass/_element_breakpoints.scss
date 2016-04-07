@@ -3,6 +3,14 @@
 @media(min-width: 0){
 	
 	// PRESET VARIABLES
+	h2{
+		font-size: 1.3em;
+	}
+
+	h3{
+		font-size: 1.1em;
+	}
+
 	h5{
 		font-size: 4em;
 		top: 0;
@@ -15,6 +23,16 @@
 
 	.wrapper{
 		min-width: 100%;
+	}
+
+	.search_bar_outer{
+		input{
+			width: 250px;
+		}
+	}
+
+	.search_bar_inner{
+		width: 275px;
 	}
 
 
@@ -125,13 +143,45 @@
 	// SIDE PORTAL
 	.side_portal{
 		float: none;
+		border: 1px solid $accent_color;
+		border-top: none;
 	}
 
 	.side_portal_page{
 		max-height: 400px;
 		overflow: scroll;
+		margin-top: 2em;
+		padding: 2em;
+		padding-top: 0;
 	}
 
+	.fa-search{
+		display: inline-block;
+	}
+
+
+	// JOBS SIDE PORTAL
+	.job_posting{
+		width: 80%;
+	}
+
+	.job_posting_logo{
+		width: 80px;
+		height: 80px;
+		margin: 2em auto;
+		float: right;
+	}
+
+
+	// USER SIDE PORTAL
+	.person_know_avatar{
+		width: 80px;
+		height: 80px;
+	}
+
+	.person_know_name_container{
+		width: 70%;
+	}
 
 }
 
@@ -142,6 +192,14 @@
 @media(min-width: 500px){
 	
 	// PRESET VARIABLES
+	h2{
+		font-size: 1.1em;
+	}
+
+	h3{
+		font-size: 1em;
+	}
+
 	h5{
 		font-size: 4em;
 		top: 0.1em;
@@ -154,6 +212,18 @@
 
 	.wrapper{
 		min-width: 700px;
+	}
+
+	.search_bar_outer{
+
+		input{
+			width: 70%;
+		}
+	}
+
+	.search_bar_inner{
+		width: 100%;
+		max-width: 275px;
 	}
 
 
@@ -178,7 +248,13 @@
 
 	.profile_avatar{
 		width: 100%;
-		max-width: 80px;
+		margin: 0 auto;
+	}
+
+	.profile_img{
+		max-width: 100px;
+		margin: 0 auto;
+		display: block;
 	}
 	
 	.profile_name_small, .profile_job_small{
@@ -193,6 +269,12 @@
 			width: 45%;
 			max-width: 40px;
 		}
+	}
+
+	.see_connections{
+		width: 100%;
+		display: inline-block;
+		margin:  auto;
 	}
 
 	.profile_name_container_medium{
@@ -276,7 +358,32 @@
 	.side_portal{
 		float: left;
 		margin-right: 0;
-		margin-top: 0.5em;
+		border: 1px solid $accent_color;
+	}
+
+	.side_portal_page{
+		max-height: 600px;
+		margin-top: 0;
+		padding: 0.5em;
+	}
+
+	.fa-search{
+		display: none;
+	}
+
+
+	// JOBS SIDE PORTAL
+	.job_posting_logo{
+		margin-top: 0.3em;
+		float: none;
+		clear: both;
+	}
+
+
+	// USER SIDE PORTAL
+	.person_know_avatar{
+		width: 60px;
+		height: 60px;
 	}
 
 }
@@ -302,6 +409,50 @@
 
 	.viewership_dropdown{
 		left: 5em;
+	}
+
+
+	// JOBS SIDE PORTAL
+	.job_posting{
+		width: 85%;
+		margin: 2em auto;
+	}
+	.job_posting_logo{
+		width: 80px;
+		height: 80px;
+		float: right;
+	}
+
+
+	// USER SIDE PORTAL
+	.person_know{
+		width: 85%;
+		margin: 2em auto;
+	}
+
+	.person_know_avatar{
+		width: 80px;
+		height: 80px;
+		margin-bottom: 3em;
+		float: left;
+	}
+
+	.person_know_name_container{
+		width: 60%;
+		float: left;
+		margin-left: 1em;
+	}
+
+	.education_page, .heart_page{
+		p{
+			padding: 1em;
+		}
+
+		.education_college_container, .education_class_container{
+			p{
+				padding: 0;
+			}
+		}
 	}
 
 }

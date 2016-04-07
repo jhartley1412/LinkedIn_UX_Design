@@ -10,92 +10,174 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 }
 
 
-@media (min-width: 0){
 
-  .col_sm_1, .col_sm_2, .col_sm_3, .col_sm_4, .col_sm_5, .col_sm_6, 
-  .col_sm_7, .col_sm_8, .col_sm_9, .col_sm_10, .col_sm_11, .col_sm_12, 
-  .col_sm_13, .col_sm_14, .col_sm_15{
-    width: 100%;
+.col_sm_1, .col_sm_2, .col_sm_3, .col_sm_4, .col_sm_5, .col_sm_6, 
+.col_sm_7, .col_sm_8, .col_sm_9, .col_sm_10, .col_sm_11, .col_sm_12, 
+.col_sm_13, .col_sm_14, .col_sm_15{
+  width: 100%;
+  margin-right: $gut-width;
+  box-sizing: border-box;
+}
+  
+
+
+@media (min-width: 500px){
+  
+  .col_md_1{
+    @include grid(1);
+    margin-right: $gut-width;
+  }
+
+  .col_md_2{
+    @include grid(2);
+    margin-right: $gut-width;
+  }
+
+  .col_md_3{
+    @include grid(3);
+    margin-right: $gut-width;
+  }
+
+  .col_md_4{
+    @include grid(4);
+    margin-right: $gut-width;
+  }
+
+  .col_md_5{
+    @include grid(5);
+    margin-right: $gut-width;
+  }
+
+  .col_md_6{
+    @include grid(6);
+    margin-right: $gut-width;
+  }
+
+  .col_md_7{
+    @include grid(7);
+    margin-right: $gut-width;
+  }
+
+  .col_md_8{
+    @include grid(8);
+    margin-right: $gut-width;
+  }
+
+  .col_md_9{
+    @include grid(9);
+    margin-right: $gut-width;
+  }
+
+  .col_md_10{
+    @include grid(10);
+    margin-right: $gut-width;
+  }
+
+  .col_md_11{
+    @include grid(11);
+    margin-right: $gut-width;
+  }
+
+  .col_md_12{
+    @include grid(12);
+    margin-right: $gut-width;
+  }
+
+  .col_md_13{
+    @include grid(13);
+    margin-right: $gut-width;
+  }
+
+  .col_md_14{
+    @include grid(14);
+    margin-right: $gut-width;
+  }
+
+  .col_md_15{
+    @include grid(15);
     margin-right: $gut-width;
   }
   
 }
 
 
-@media (min-width: 500px){
+
+
+
+@media (min-width: 860px){
   
-  .col_md_1, .col_lg_1{
-    width: 6.648%;
+  .col_lg_1{
+    @include grid(1);
     margin-right: $gut-width;
   }
 
-  .col_md_2, .col_lg_2{
-    width: 15.296%;
+  .col_lg_2{
+    @include grid(2);
     margin-right: $gut-width;
   }
 
-  .col_md_3, .col_lg_3{
-    width: 21.944%;
+  .col_lg_3{
+    @include grid(3);
     margin-right: $gut-width;
   }
 
-  .col_md_4, .col_lg_4{
-    width: 28.592%;
+  .col_lg_4{
+    @include grid(4);
     margin-right: $gut-width;
   }
 
-  .col_md_5, .col_lg_5{
-    width: 35.24%;
+  .col_lg_5{
+    @include grid(5);
     margin-right: $gut-width;
   }
 
-  .col_md_6, .col_lg_6{
-    width: 41.888%;
+  .col_lg_6{
+    @include grid(6);
     margin-right: $gut-width;
   }
 
-  .col_md_7, .col_lg_7{
-    width: 48.536%;
+  .col_lg_7{
+    @include grid(7);
     margin-right: $gut-width;
   }
 
-  .col_md_8, .col_lg_8{
-    width: 55.184%;
+  .col_lg_8{
+    @include grid(8);
     margin-right: $gut-width;
   }
 
-  .col_md_9, .col_lg_9{
-    width: 61.832%;
+  .col_lg_9{
+    @include grid(9);
     margin-right: $gut-width;
   }
 
-  .col_md_10, .col_lg_10{
-    width: 68.48%;
+  .col_lg_10{
+    @include grid(10);
     margin-right: $gut-width;
   }
 
-  .col_md_11, .col_lg_11{
-    width: 75.128%;
+  .col_lg_11{
+    @include grid(11);
     margin-right: $gut-width;
   }
 
-  .col_md_12, .col_lg_12{
-    width: 81.776%;
+  .col_lg_12{
+    @include grid(12);
     margin-right: $gut-width;
   }
 
-  .col_md_13, .col_lg_13{
-    width: 88.424%;
+  .col_lg_13{
+    @include grid(13);
     margin-right: $gut-width;
   }
 
-  .col_md_14, .col_lg_14{
-    width: 95.072%;
+  .col_lg_14{
+    @include grid(14);
     margin-right: $gut-width;
   }
 
-  .col_md_15, .col_lg_15{
-    width: 100%;
+  .col_lg_15{
+    @include grid(15);
     margin-right: $gut-width;
   }
   

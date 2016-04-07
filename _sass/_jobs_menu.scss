@@ -3,8 +3,6 @@
 
 
 .job_posting{
-	width: 80%;
-	margin: 2em auto;
 	margin-bottom: 4em;
 	
 	h2{
@@ -21,10 +19,6 @@
 	width: 80px;
 	height: 80px;
 	background-color: $header_color;
-}
-
-.job_posting_logo{
-	float: right;
 }
 
 .job_learn_more, .job_apply{
