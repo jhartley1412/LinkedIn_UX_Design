@@ -217,7 +217,7 @@
 	.search_bar_outer{
 
 		input{
-			width: 70%;
+			width: 90%;
 		}
 	}
 
@@ -400,6 +400,15 @@
 		left: 0.1em;
 	}
 
+	.news_updates_page, .viewership_page{
+		border-left: 15px solid $header_color;
+	}
+
+
+	.center_content_container, .side_portal{
+		margin-top: 1em;
+	}
+
 	// VIEWERSHIP PAGE
 	.viewership_text{
 		width: 70%;
@@ -411,6 +420,9 @@
 		left: 5em;
 	}
 
+	.jobs_page, .user_page, .education_page{
+		margin-bottom: 3em;
+	}
 
 	// JOBS SIDE PORTAL
 	.job_posting{
@@ -443,6 +455,8 @@
 		margin-left: 1em;
 	}
 
+
+	// EDUCATION SIDE PORTAL
 	.education_page, .heart_page{
 		p{
 			padding: 1em;
@@ -452,6 +466,14 @@
 			p{
 				padding: 0;
 			}
+		}
+	}
+
+
+	.search_bar_outer{
+
+		input{
+			width: 90%;
 		}
 	}
 

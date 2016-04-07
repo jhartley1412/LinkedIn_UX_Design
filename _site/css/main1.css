@@ -1354,7 +1354,7 @@ a.footer_link {
     min-width: 700px; }
 
   .search_bar_outer input {
-    width: 70%; }
+    width: 90%; }
 
   .search_bar_inner {
     width: 100%;
@@ -1477,6 +1477,12 @@ a.footer_link {
     top: -0.1em;
     left: 0.1em; }
 
+  .news_updates_page, .viewership_page {
+    border-left: 15px solid #00396b; }
+
+  .center_content_container, .side_portal {
+    margin-top: 1em; }
+
   .viewership_text {
     width: 70%;
     max-width: 300px;
@@ -1484,6 +1490,9 @@ a.footer_link {
 
   .viewership_dropdown {
     left: 5em; }
+
+  .jobs_page, .user_page, .education_page {
+    margin-bottom: 3em; }
 
   .job_posting {
     width: 85%;
@@ -1512,7 +1521,10 @@ a.footer_link {
   .education_page p, .heart_page p {
     padding: 1em; }
   .education_page .education_college_container p, .education_page .education_class_container p, .heart_page .education_college_container p, .heart_page .education_class_container p {
-    padding: 0; } }
+    padding: 0; }
+
+  .search_bar_outer input {
+    width: 90%; } }
 .body {
   overflow: hidden; }
 
@@ -1573,7 +1585,8 @@ li {
   border: 1px solid #a7b8d1; }
   .search_bar_outer input {
     border-radius: 10px;
-    float: left; }
+    float: left;
+    padding: 5px; }
   .search_bar_outer .fa-search {
     margin-top: 7px;
     margin-left: 5px;
