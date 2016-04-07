@@ -1007,8 +1007,7 @@ a {
   margin: 2em auto;
   overflow: hidden; }
   .education_college_container p, .education_class_container p {
-    width: 70%;
-    float: left; }
+    width: 100%; }
   .education_college_container .large_link, .education_class_container .large_link {
     float: left;
     clear: both; }
@@ -1017,10 +1016,8 @@ a {
   margin-bottom: 4em; }
 
 .college_img, .class_img {
-  width: 30%;
-  height: 60px;
-  float: left;
-  background-color: #00396b; }
+  width: 100%;
+  margin: 0.5em 0; }
 
 body {
   font-family: "proxima-nova-soft", "Tahoma", sans-serif;
@@ -1520,8 +1517,10 @@ a.footer_link {
 
   .education_page p, .heart_page p {
     padding: 1em; }
-  .education_page .education_college_container p, .education_page .education_class_container p, .heart_page .education_college_container p, .heart_page .education_class_container p {
-    padding: 0; }
+  .education_page .education_college_container, .education_page .education_class_container, .heart_page .education_college_container, .heart_page .education_class_container {
+    width: 85%; }
+    .education_page .education_college_container p, .education_page .education_class_container p, .heart_page .education_college_container p, .heart_page .education_class_container p {
+      padding: 0; }
 
   .search_bar_outer input {
     width: 90%; } }

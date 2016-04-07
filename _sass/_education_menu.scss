@@ -7,10 +7,9 @@
 	box-sizing: border-box;
 	margin: 2em auto;
 	overflow: hidden;
-	
+
 	p{
-		width: 70%;
-		float: left;
+		width: 100%;
 	}
 
 	.large_link{
@@ -24,8 +23,9 @@
 }
 
 .college_img, .class_img{
-	width: 30%;
-	height: 60px;
-	float: left;
-	background-color: $header_color;
+	width: 100%;
+	margin: 0.5em 0;
 }
+
+
+
