@@ -119,6 +119,10 @@
 		height: 175px;
 	}
 
+	.large_extra_articles{
+		display: none;
+	}
+
 	.more_articles{
 		padding-top: 2em;
 		padding-left: 2em;
@@ -325,6 +329,10 @@
 		max-width: 200px;
 		margin: 1em auto 0 auto;
 		max-height: 100px;
+	}
+
+	.large_extra_articles{
+		display: block;
 	}
 
 	.more_articles{
